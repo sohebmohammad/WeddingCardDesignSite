@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="./template.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav id="navBar">
+      <div id="addImg">
+        <form>
+          <label for=""><i class="fa-solid fa-image"></i></label>
+          <input type="file" value="Upload img" />
+        </form>
+      </div>
+      <div id="back">
+        <h1><i class="fa-solid fa-rotate-right"></i></h1>
+      </div>
+      <div id="front">
+        <h1><i class="fa-solid fa-rotate-left"></i></h1>
+      </div>
+      <div id="increase">
+        <i class="fa-solid fa-plus" onclick="increaseSiteSize()"></i>
+      </div>
+      <div id="decrease"><i class="fa-solid fa-minus"></i></div>
+      <div class="changeBackground" onclick="change()">
+        <i class="fas fa-sun"></i>
+      </div>
+    </nav>
+    <div class="c1">
+      <div class="img-container">
+        <img id="card-image" src="./image2/card2.jpg" alt="Wedding Card" />
+      </div>
+      <div class="form-container">
+        <form onsubmit="handleField(event, 'groomName')">
+          <label for="groomName">Groom's Name:</label>
+          <input
+            type="text"
+            id="groomName"
+            name="groomName"
+            placeholder="Enter Groom's Name"
+          />
+          <button type="submit">Enter</button>
+        </form>
+
+        <form onsubmit="handleField(event, 'brideName')">
+          <label for="brideName">Bride's Name:</label>
+          <input
+            type="text"
+            id="brideName"
+            name="brideName"
+            placeholder="Enter Bride's Name"
+          />
+          <button type="submit">Enter</button>
+        </form>
+
+        <form onsubmit="handleField(event, 'weddingDate')">
+          <label for="weddingDate">Wedding Date:</label>
+          <input type="date" id="weddingDate" name="weddingDate" />
+          <button type="submit">Enter</button>
+        </form>
+
+        <form onsubmit="handleField(event, 'venue')">
+          <label for="venue">Wedding Venue:</label>
+          <input
+            type="text"
+            id="venue"
+            name="venue"
+            placeholder="Enter Venue Address"
+          />
+          <button type="submit">Enter</button>
+        </form>
+
+        <form onsubmit="handleField(event, 'message')">
+          <label for="message">Custom Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Enter a custom message"
+          ></textarea>
+          <button type="submit">Enter</button>
+        </form>
+
+        <div id="draggableElements"></div>
+      </div>
+    </div>
+    <div id="downloadBtn">
+      <button>Download Edited Card</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas"></script>
+
+    <script src="./template.js"></script>
+  </body>
+</html>

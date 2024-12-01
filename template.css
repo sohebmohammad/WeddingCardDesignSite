@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+  padding: 15px;
+
+  border: #8b0000 2px solid;
+  font-size: larger;
+}
+#navBar div {
+  border: 1px solid black;
+}
+
+.c1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.img-container {
+  position: relative;
+  flex-basis: 50%;
+}
+
+#card-image {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #8b0000;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background-color: #fdf5e6;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.draggable {
+  cursor: move;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.draggable .remove-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 2px 5px;
+}
+text {
+  font-size: larger;
+}
+#downloadBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#downloadBtn button {
+  height: 50px;
+  width: 100px;
+  background-color: #8b0000;
+  color: white;
+  border-radius: 10px;
+}
